@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola</title>
+    <link rel="stylesheet" href="o1.css">
+</head>
+<body>
+    <h1>Nada para fazer nessa escola bora brincar</h1>
+    <p>Para ir para proxima pagina reolva o enigma</p>
+    <p>54444 aqui temos um numero criptografado de forma simples<br>
+    resolva a criptografia e coloque abaixo para avançar dica "5"</p>
+ <!-- Caixa de entrada de número -->
+<label for="numero">Digite um número:</label>
+<input type="number" id="numero" name="numero">
+<button onclick="verificarNumero()">Verificar</button>
+
+<!-- Script JavaScript -->
+<script>
+    function verificarNumero() {
+        // Obtendo o valor digitado na caixa de entrada
+        var numeroDigitado = document.getElementById("numero").value;
+
+        // Verificando se o número digitado é igual a 09999
+        if (numeroDigitado === "09999") {
+            // Redirecionando para "02.html" se o número for 09999
+            window.location.href = '02.html';
+        } else {
+            // Exibindo mensagem de erro se o número for diferente de 09999
+            alert("Número incorreto. Por favor, digite o numero correto.");
+        }
+    }
+</script>
+</body>
+</html>
